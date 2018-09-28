@@ -56,11 +56,3 @@ class Db{
         mysqli_close($this->connect());
     }
 }
-
-$db = new Db("localhost","root","","test");
-$dbin = Db::insert(array("id","name","email","create"),array(null,"hasan","hasan@gmail.com","NOW()"));
-if($dbin){
-    echo "db insert";
-}else{
-    echo "error";
-}
